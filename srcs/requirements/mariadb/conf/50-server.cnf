@@ -1,0 +1,14 @@
+[server]
+socket = /var/run/mysqld/mysqld.sock
+
+[client]
+socket = /var/run/mysqld/mysqld.sock
+[mysqld]
+
+user                    = root
+datadir                 = /var/lib/mysql
+tmpdir                  = /tmp
+skip-networking		= false
+bind-address            = *
+port			= 3306
+socket = /var/run/mysqld/mysqld.sock
